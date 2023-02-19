@@ -1,0 +1,23 @@
+@import url('./vendor/normalize.css');
+@import url('./vendor/fonts/fonts.css');
+@import url('./components/App/App.css');
+@import url('components/Header/index.css');
+@import url('./components/Cells/Cells.css');
+@import url('./components/Cell/Cell.css');
+@import url('./components/Table/Table.css');
+@import url('components/Footer/index.css');
+@import url('./components/About/About.css');
+@import url('./components/Carousel/Carousel.css');
+@import url('./components/Contact/Contact.css');
+@import url('./components/ContactItem/ContactItem.css');
+@import url('./components/Careers/Careers.css');
+@import url('./components/Vacancies/Vacancies.css');
+@import url('./components/VacanciesItem/VacanciesItem.css');
+@import url('./components/FilterOffice/FilterOffice.css');
+@import url('./components/FIlterOfficeItem/FilterOfficeItem.css');
+@import url('./components/Blog/Blog.css');
+@import url('./components/MonksStat/MonksStat.css');
+
+body {
+    background-color: #1a1a1a;
+}

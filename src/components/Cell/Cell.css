@@ -1,0 +1,264 @@
+.cell {
+    flex: 0 0 calc(20% - 0.8px);
+    height: 380px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.cell:hover {
+    cursor: pointer;
+}
+
+.cell._active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 380px;
+    background-color: #1a1a1a;
+    z-index: 2;
+}
+
+.cell__diagonal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.cell__line {
+    stroke: #333;
+    stroke-width: 1px;
+}
+
+.cell._active .cell__diagonal {
+    opacity: 1;
+}
+
+.cell__letter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'klavika', sans-serif;
+    font-weight: 900;
+    font-size: 300px;
+    text-transform: uppercase;
+    line-height: 1;
+    opacity: 0;
+    z-index: 3;
+    transition: all 0.3s ease 0s;
+}
+
+.cell._active .cell__letter {
+  opacity: 1;
+}
+
+.cell._before::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 380px;
+  background-color: #1a1a1a;
+  animation: dissapear 4s forwards;
+  z-index: 2;
+}
+
+.cell._after::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 380px;
+    background-color: #1a1a1a;
+    animation: dissapear 4s forwards;
+    z-index: 2;
+}
+
+.cell__number {
+    position: absolute;
+    top: 17px;
+    left: 10px;
+    font-family: 'klavika';
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0;
+    z-index: 3;
+    padding-bottom: 3.75px;
+    border-bottom: 1px solid #fff;
+}
+
+.cell__name {
+    position: absolute;
+    top: 47px;
+    left: 10px;
+    font-family: 'klavika';
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    z-index: 3;
+}
+
+.cell._active .cell__number {
+    border-bottom: none;
+}
+
+.cell._active .x-top {
+    animation: line-top 0.2s ease-in-out forwards;
+}
+
+.cell._active .y-right {
+    animation: line-right 0.1s ease-in-out 0s forwards;
+}
+
+.cell._active .x-bottom {
+    animation: line-bottom 0.2s ease-in-out 0s forwards;
+}
+
+.cell._active .y-left {
+    animation: line-left 0.2s ease-in-out 0.2s forwards;
+}
+
+.cell._active .cell__name {
+    animation: name-dissapear 0.15s ease-in-out forwards;
+}
+
+.borders {
+    opacity: 0;
+}
+
+.cell._active .borders {
+    opacity: 1;
+}
+
+.x-top {
+    position: absolute;
+    top: 34px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 1px;
+    z-index: 3;
+    background-color: #fff;
+}
+
+.x-bottom {
+    position: absolute;
+    top: calc(100% - 20px);
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 1px;
+    z-index: 3;
+    background-color: #fff;
+}
+
+.y-left {
+    position: absolute;
+    top: 34px;
+    left: 10px;
+    width: 0.5px;
+    height: 86%;
+    z-index: 3;
+    background-color: #fff;
+}
+
+.y-right {
+    position: absolute;
+    top: 34px;
+    left: calc(100% - 10px);
+    width: 0.5px;
+    height: 86%;
+    z-index: 3;
+    background-color: #fff;
+}
+
+@keyframes dissapear {
+    from {
+        background: #1a1a1a;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes line-top {
+    0% {
+        opacity: 0;
+        width: calc(100% - 20px);
+    }
+    50% {
+        opacity: 1;
+        width: 0;
+    }
+    100% {
+        width: 12px;
+    }
+}
+
+@keyframes line-right {
+    from {
+        opacity: 0;
+        top: 34px;
+        height: 86%;
+    }
+    to {
+        opacity: 1;
+        top: calc(86% + 34px);
+        height: 0;
+    }
+}
+
+@keyframes line-bottom {
+    from {
+        opacity: 0;
+        width: calc(100% - 20px);
+    }
+    to {
+        opacity: 1;
+        width: 0;
+    }
+}
+
+@keyframes line-left {
+    from {
+        opacity: 0;
+        height: 86%;
+    }
+    to {
+        opacity: 1;
+        height: 0;
+    }
+}
+
+@keyframes name-dissapear {
+    0% { 
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .cell {
+        flex: 0 0 calc(50% - 0.5px);
+    }
+}

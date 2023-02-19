@@ -1,0 +1,76 @@
+.monks-stat {
+    font-family: 'klavika', sans-serif;
+    background-color: #fff;
+}
+
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.data__item {
+    list-style: none;
+    padding: 0 40px;
+    border-left: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.data__item:first-child {
+    border-left: 0;
+    padding-left: 0;
+}
+
+.data__item:last-child {
+    padding-right: 0;
+}
+
+.item__title {
+    font-family: 'droid', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 21px;
+    line-height: 2.4;
+}
+
+.item__value {
+    font-family: 'klavika', sans-serif;
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 1;
+    color: #1a1a1a;
+}
+
+@media (max-width: 1470px) {
+    .data {
+        justify-content: flex-start;
+    }
+    .data__item {
+        flex: 0 0 50%;
+        padding: 0 40px 20px;
+    }
+
+    .item__value {
+        font-size: 80px;
+    }
+
+    .data__item:first-child {
+        padding: 0 40px 20px;
+    }
+
+    .data__item:last-child {
+        padding: 0 40px 20px
+    }
+    .data__item:nth-child(odd) {
+        border: none;
+    }
+}
+
+@media (max-width: 760px) {
+    .data__item {
+        flex: 0 0 100%;
+        border: none;
+    }
+}

@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "droid";
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./droidserif-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "droid";
+    font-style:  italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./droidserif-italic-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "klavika";
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./klavikach-regularcond-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "klavika";
+    font-style:  normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("./klavikach-lightcond-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "klavika";
+    font-style:  normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("./klavikach-mediumcond-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "klavika";
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("./klavikach-boldcond-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "klavika";
+    font-style:  italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./klavika-regularitalic-webfont.woff") format("woff");
+}

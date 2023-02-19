@@ -1,0 +1,97 @@
+.contact-item {
+    display: flex;
+    border-top: 1px solid #333;
+}
+
+.contact-item__name {
+    width: 50%;
+    font-size: 72px;
+    line-height: 0.8;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 54px 60px 75px;
+    vertical-align: top;
+}
+
+.contact-item__data {
+    width: 50%;
+    padding: 54px 60px 56px 0;
+}
+
+.contact-item__description {
+    font-family: 'droid', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 2;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 1.6em;
+}
+
+.contact-item__address {
+    font-family: 'droid', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 2;
+    color: #fff;
+    margin: 18px 0;
+    max-width: 220px;
+}
+
+.contact-item__contact-data {
+    display: block;
+    font-family: 'droid', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    color: #fff;
+    margin: 0;
+}
+
+.contact-item__contact-data:last-of-type {
+    margin-bottom: 28px;
+}
+
+.contact-item__subtitle {
+    font-family: 'klavika', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 22px 0 20px;
+    margin: 0;
+}
+
+.contact-item__data-info {
+    display: block;
+    font-family: 'droid', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+}
+
+.contact-item__data-info:last-of-type {
+    margin-bottom: 28px;
+}
+
+@media (max-width: 960px) {
+    .contact-item {
+        flex-direction: column;
+    }
+    .contact-item__name {
+        width: 100%;
+        font-size: 56px;
+        border-bottom: 1px solid #333;
+    }
+    .contact-item__data {
+        width: 100%;
+        padding: 55px 60px;
+    }
+}

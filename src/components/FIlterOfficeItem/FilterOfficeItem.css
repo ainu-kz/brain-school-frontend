@@ -1,0 +1,29 @@
+.filter-office-item {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 0.8;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 14px 0 0;
+    margin: 0 30px 0 0;
+    color: #666;
+    transition: 0.4s;
+}
+
+.filter-office-item._active {
+    color: #fff;
+}
+
+.filter-office-item:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.filter-office-item_button {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translate(-100%, 28.4px);
+    padding: 0;
+    transition: 0.4s;
+}
