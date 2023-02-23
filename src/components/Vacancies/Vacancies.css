@@ -1,8 +1,8 @@
 .vacancies {
-    border-top: 1px solid #333;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
+  border-top: 1px solid #333;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
 }

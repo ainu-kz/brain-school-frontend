@@ -1,0 +1,70 @@
+.footer {
+  width: 100%;
+
+  &__icon {
+    width: 30px;
+    transition: scale 100ms ease-in 0s;
+
+    &:hover {
+      scale: 1.2;
+    }
+  }
+}
+
+.footer__privacy {
+  font-family: 'droid', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+  padding: 18px 20px;
+}
+
+.footer__privacy-link {
+  color: inherit;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-left: 1px solid #333;
+
+  width: 80px;
+  height: 80px;
+
+  transition: all 0.2s ease 0s;
+  outline: none;
+  position: relative;
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__social {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+@keyframes hover {
+  0% {
+    opacity: 0;
+    width: 50%;
+    height: 50%;
+  }
+  50% {
+    opacity: 1;
+    width: 70%;
+    height: 70%;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+}

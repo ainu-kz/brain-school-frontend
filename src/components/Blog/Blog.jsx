@@ -1,9 +1,7 @@
-const Blog = () => {
-    return (
-        <section className="blog">
-            
-        </section>
-    )
-};
+import React from 'react';
+
+function Blog() {
+  return <section className="blog" />;
+}
 
 export default Blog;
