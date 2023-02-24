@@ -11,10 +11,12 @@
 
 .cell._active::before {
   content: '';
+
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+
   height: 380px;
   background-color: #1a1a1a;
   z-index: 2;
@@ -23,9 +25,11 @@
 .cell__diagonal {
   width: 100%;
   height: 100%;
+
   position: absolute;
   top: 0;
   left: 0;
+
   z-index: 2;
   opacity: 0;
 }
@@ -37,6 +41,7 @@
 
 .cell._active .cell__diagonal {
   opacity: 1;
+  animation: number-appear 2s forwards;
 }
 
 .cell__letter {
@@ -44,12 +49,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+
   font-family: 'klavika', sans-serif;
   font-weight: 900;
   font-size: 300px;
   text-transform: uppercase;
   line-height: 1;
+  color: #fff;
+
   opacity: 0;
   z-index: 3;
   transition: all 0.3s ease 0s;
@@ -57,27 +64,19 @@
 
 .cell._active .cell__letter {
   opacity: 1;
+  animation: number-appear 2s forwards;
 }
 
-.cell._before::before {
+.cell._inactive::before {
   content: '';
+
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 380px;
-  background-color: #1a1a1a;
-  animation: disappear 4s forwards;
-  z-index: 2;
-}
 
-.cell._after::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 380px;
+
   background-color: #1a1a1a;
   animation: disappear 4s forwards;
   z-index: 2;
@@ -87,11 +86,13 @@
   position: absolute;
   top: 17px;
   left: 10px;
+
   font-family: 'klavika', sans-serif;
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 1px;
   color: #fff;
+
   margin: 0;
   z-index: 3;
   padding-bottom: 4px;
@@ -102,12 +103,14 @@
   position: absolute;
   top: 47px;
   left: 10px;
+
   font-family: 'klavika', sans-serif;
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #fff;
+
   margin: 0;
   z-index: 3;
 }
@@ -141,6 +144,15 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes number-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

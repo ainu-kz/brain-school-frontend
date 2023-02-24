@@ -10,7 +10,7 @@ import animationPath from '../../assets/wallpapers/library.jpg';
 import vrPath from '../../assets/wallpapers/music.jpg';
 import experimentalPath from '../../assets/wallpapers/numbers.jpg';
 import richMediaPath from '../../assets/wallpapers/pencils.jpg';
-import { Cell } from '../Cell/Cell';
+import { Cell } from '../Cell';
 
 const blocksInfo = [
   {

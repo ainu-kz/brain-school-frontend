@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './styles.scss';
 
 export const Cell = ({
@@ -9,16 +9,6 @@ export const Cell = ({
     onMouseEnter,
     onMouseLeave
   }) => {
-  const [status, setStatus] = useState(false);
-
-  const handleChangeImage = () => {
-    setStatus(!status);
-
-    return status;
-  };
-
-  const handlePseudoSelector = () => (status ? '_before' : '_after');
-
   const formatCellNumber = (number) => {
     if (number < 10) {
       return 0 + number;
@@ -27,15 +17,12 @@ export const Cell = ({
     return number;
   };
 
-  const checkBackground = () => name !== imageName && handleChangeImage();
-
-  useEffect(() => checkBackground(), [imageName]);
-
   return (
     <div
+      key={imageName}
       id={id}
       className={`cell ${
-        name !== imageName ? handlePseudoSelector() : '_active'
+        name !== imageName ? '_inactive' : '_active'
       }`}
       style={
         name !== imageName
