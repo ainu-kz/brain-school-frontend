@@ -1,56 +1,58 @@
 import React, { useEffect, useRef, useState } from "react";
 import './styles.scss';
 
-import ContentPath from '../../assets/wallpapers/calculator.jpg';
+import logicPath from '../../assets/wallpapers/puzzle.jpg';
 import filmsPath from '../../assets/wallpapers/classroom.jpg';
 import mobilePath from '../../assets/wallpapers/study.jpg';
-import gamesPath from '../../assets/wallpapers/green.jpg';
+import calculatorPath from '../../assets/wallpapers/green.jpg';
 import vfxPath from '../../assets/wallpapers/math.jpg';
 import animationPath from '../../assets/wallpapers/library.jpg';
-import vrPath from '../../assets/wallpapers/music.jpg';
+import vrPath from '../../assets/wallpapers/calculator.jpg';
 import experimentalPath from '../../assets/wallpapers/numbers.jpg';
 import richMediaPath from '../../assets/wallpapers/pencils.jpg';
+import speechPath from '../../assets/wallpapers/speech.jpg';
+
 import { Cell } from '../Cell';
 
 const blocksInfo = [
   {
-    name: 'content',
-    src: ContentPath,
+    name: 'логика',
+    src: logicPath,
   },
   {
-    name: 'films',
+    name: 'память',
     src: filmsPath,
   },
   {
-    name: 'mobile & platforms',
-    src: mobilePath,
+    name: 'речь',
+    src: speechPath,
   },
   {
-    name: 'games',
-    src: gamesPath,
+    name: 'мультисенсорика',
+    src: calculatorPath,
   },
   {
-    name: 'vfx & post',
+    name: 'нейрофитнес',
     src: vfxPath,
   },
   {
-    name: 'animation',
+    name: 'скорочтение',
     src: animationPath,
   },
   {
-    name: 'vr',
+    name: 'мнемотехника',
     src: vrPath,
   },
   {
-    name: 'experimental',
+    name: 'нейробика',
     src: experimentalPath,
   },
   {
-    name: 'rich media',
+    name: 'мышление',
     src: richMediaPath,
   },
   {
-    name: 'for good',
+    name: 'эйдотехника',
     src: mobilePath,
   },
 ];
@@ -65,6 +67,11 @@ export const Cells = () => {
   );
 
   const ref = useRef(0);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+    document.title = 'Brain School | Главная страница';
+  }, []);
 
   useEffect(() => {
     handleAnimations();

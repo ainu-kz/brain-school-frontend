@@ -5,7 +5,6 @@ import Blog from '../Blog/Blog';
 import Careers from '../Careers/Careers';
 import { Cells } from '../Cells';
 import Contact from '../Contact/Contact';
-
 import Footer from '../Footer';
 import Table from '../Table/Table';
 import Header from '../Header';

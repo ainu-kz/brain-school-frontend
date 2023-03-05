@@ -5,7 +5,7 @@ import Vacancies from '../Vacancies/Vacancies';
 function Careers() {
   useEffect(() => {
     window.scrollTo({ top: 0 });
-    document.title = 'MediaMonksClone | Careers';
+    document.title = 'Brain School | Расписание';
   }, []);
 
   return (

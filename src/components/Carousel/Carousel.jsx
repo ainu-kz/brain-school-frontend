@@ -5,8 +5,8 @@ import slide1Path from '../../assets/wallpapers/study.jpg';
 import slide2Path from '../../assets/wallpapers/numbers.jpg';
 import slide3Path from '../../assets/wallpapers/classroom.jpg';
 import slide4Path from '../../assets/wallpapers/pencils.jpg';
-import nextPath from '../../assets/next.ico';
-import prevPath from '../../assets/prev.ico';
+import nextPath from '../../assets/icons/next.ico';
+import prevPath from '../../assets/icons/prev.ico';
 
 const slidesData = [slide1Path, slide2Path, slide3Path, slide4Path];
 

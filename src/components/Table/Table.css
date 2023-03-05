@@ -1,5 +1,5 @@
 .table {
-  font-family: 'klavika', serif;
+  font-family: 'Gilroy', serif;
   color: #fff;
   width: 100%;
   padding: 0 60px;
@@ -221,7 +221,7 @@
   .table__title_time {
     width: 40%;
     padding: 0 6px 0 0;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .table__title_open {
@@ -258,7 +258,7 @@
   .table__contact_address > span {
     display: block;
     margin-bottom: 13px;
-    font-family: 'klavika', sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-weight: 300;
     font-size: 22px;
     line-height: 1;
@@ -348,7 +348,7 @@
 @media screen and (min-width: 1680px) {
   .table__time,
   .table__open {
-    font-size: 120px;
+    font-size: 92px;
     line-height: 0.68;
   }
 

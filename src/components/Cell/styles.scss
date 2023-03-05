@@ -1,8 +1,13 @@
 .cell {
-  flex: 0 0 calc(20% - 1px);
+  flex: 0 0 calc(20% - 6px);
   height: 380px;
   position: relative;
   box-sizing: border-box;
+
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  margin: 0;
+  overflow: hidden;
 }
 
 .cell:hover {
@@ -50,7 +55,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  font-family: 'klavika', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 900;
   font-size: 300px;
   text-transform: uppercase;
@@ -87,7 +92,7 @@
   top: 17px;
   left: 10px;
 
-  font-family: 'klavika', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 1px;
@@ -104,7 +109,7 @@
   top: 47px;
   left: 10px;
 
-  font-family: 'klavika', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 1px;
@@ -116,7 +121,7 @@
 }
 
 .cell._active .cell__name {
-  animation: name-disappear 0.15s ease-in-out forwards;
+  animation: disappear 0.15s ease-in-out forwards;
 }
 
 .cell._active .borders {
@@ -132,26 +137,11 @@
   }
 }
 
-@keyframes name-disappear {
-  0% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 @keyframes number-appear {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }

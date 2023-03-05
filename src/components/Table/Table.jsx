@@ -4,14 +4,14 @@ function Table() {
   return (
     <div className="page__section page__table table">
       <div className="table__row table__row_title">
-        <div className="table__title table__title_time">office time</div>
-        <div className="table__title table__title_open">office open</div>
-        <div className="table__title table__title_address">addres</div>
-        <div className="table__title table__title_contact">contact</div>
+        <div className="table__title table__title_time">время</div>
+        <div className="table__title table__title_open">курс</div>
+        <div className="table__title table__title_address">адрес</div>
+        <div className="table__title table__title_contact">контакты</div>
       </div>
       <div className="table__row">
         <div className="table__time _closed">23:05</div>
-        <div className="table__open _closed">hilversum</div>
+        <div className="table__open _closed">Логика</div>
         <div className="table__contact">
           <div className="table__contact_address">
             <span>address</span>
@@ -37,7 +37,7 @@ function Table() {
       </div>
       <div className="table__row">
         <div className="table__time _closed">10:00</div>
-        <div className="table__open _closed">nur-sultan</div>
+        <div className="table__open _closed">Речь</div>
         <div className="table__contact">
           <div className="table__contact_address">
             <span>address</span>
@@ -64,7 +64,7 @@ function Table() {
       </div>
       <div className="table__row">
         <div className="table__time">23:05</div>
-        <div className="table__open">amsterdam</div>
+        <div className="table__open">Мнемотехника</div>
         <div className="table__contact">
           <div className="table__contact_address">
             <span>address</span>
@@ -88,7 +88,7 @@ function Table() {
       </div>
       <div className="table__row">
         <div className="table__time">7:00</div>
-        <div className="table__open">moscow</div>
+        <div className="table__open">Нейробика</div>
         <div className="table__contact">
           <div className="table__contact_address">
             <span>address</span>

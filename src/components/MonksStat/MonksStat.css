@@ -1,5 +1,5 @@
 .monks-stat {
-  font-family: 'klavika', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   background-color: #fff;
 }
 
@@ -28,16 +28,16 @@
 }
 
 .item__title {
-  font-family: 'droid', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 400;
-  font-style: italic;
   font-size: 21px;
   line-height: 2.4;
+  color: #505050;
 }
 
 .item__value {
-  font-family: 'klavika', sans-serif;
-  font-weight: 900;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 700;
   font-size: 120px;
   line-height: 1;
   color: #1a1a1a;

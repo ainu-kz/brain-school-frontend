@@ -5,7 +5,7 @@ import { contacts } from '../../data/data';
 function Contact() {
   useEffect(() => {
     window.scrollTo({ top: 0 });
-    document.title = 'MediaMonksClone | Contact';
+    document.title = 'Brain School | Контакты';
   });
 
   return (

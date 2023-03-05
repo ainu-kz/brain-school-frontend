@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './styles.scss';
+import Puzzle from '../../assets/icons/puzzle.svg';
 
 const ELEMENT_START = 6;
 
@@ -77,7 +78,7 @@ function Header() {
             </li>
             <li className="menu__item">
               <NavLink onClick={onLinkClick} to="/about" className="menu__link">
-                about
+                о школе
               </NavLink>
             </li>
             <li className="menu__item">
@@ -86,7 +87,7 @@ function Header() {
                 to="/careers"
                 className="menu__link"
               >
-                careers
+                расписание
               </NavLink>
             </li>
             <li className="menu__item">
@@ -95,12 +96,12 @@ function Header() {
                 to="/contact"
                 className="menu__link"
               >
-                contact
+                контакты
               </NavLink>
             </li>
             <li className="menu__item">
               <NavLink onClick={onLinkClick} to="#" className="menu__link">
-                blog
+                блог
               </NavLink>
             </li>
             <li className="menu__item">
@@ -109,19 +110,19 @@ function Header() {
                 target="blank"
                 className="menu__link"
               >
-                watch our mixtape
+                программа
               </a>
             </li>
           </ul>
         </div>
         <div className="menu__body_background" />
       </div>
-      <div
+      <img
+        src={Puzzle}
+        alt="brain school logo"
         ref={logo}
         className={`header__logo ${isScroll ? 'header__logo_active' : ''}`}
-      >
-        brain school
-      </div>
+      />
     </header>
   );
 }
