@@ -1,6 +1,7 @@
 import React from 'react';
+import './styles.scss'
 
-function MonksStat(props) {
+function SchoolStat(props) {
   return (
     <section className={`monks-stat ${props.className}`}>
       <ul className="monks-stat__data data">
@@ -9,24 +10,20 @@ function MonksStat(props) {
           <span className="item__value">2021</span>
         </li>
         <li className="data__item item">
-          <span className="item__title">Учеников</span>
-          <span className="item__value">2000+</span>
+          <span className="item__title">Заданий</span>
+          <span className="item__value">250+</span>
         </li>
         <li className="data__item item">
           <span className="item__title">Курсов</span>
-          <span className="item__value">24</span>
+          <span className="item__value">12</span>
         </li>
         <li className="data__item item">
-          <span className="item__title">Классов</span>
-          <span className="item__value">131</span>
-        </li>
-        <li className="data__item item">
-          <span className="item__title">Скачиваний</span>
-          <span className="item__value">250+</span>
+          <span className="item__title">Учеников</span>
+          <span className="item__value">400+</span>
         </li>
       </ul>
     </section>
   );
 }
 
-export default MonksStat;
+export default SchoolStat;

@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import headerBigPath from '../../assets/wallpapers/calculator.jpg';
 import Carousel from '../Carousel/Carousel';
-import MonksStat from '../MonksStat/MonksStat';
+import SchoolStat from '../SchoolStat';
 import './styles.scss';
 
-function About() {
+export const About = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
     document.title = 'Brain School | О Школе';
@@ -29,10 +29,8 @@ function About() {
           </p>
         </article>
         <Carousel />
-        <MonksStat className="about__info" />
+        <SchoolStat className="about__info" />
       </div>
     </section>
   );
 }
-
-export default About;

@@ -27,7 +27,7 @@
 }
 
 .table__title_time {
-  width: 15%;
+  min-width: 15%;
   padding-bottom: 15px;
 }
 

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import FilterOffice from '../FilterOffice/FilterOffice';
 import Vacancies from '../Vacancies/Vacancies';
 
-function Careers() {
+export const Careers = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
     document.title = 'Brain School | Расписание';
@@ -38,5 +38,3 @@ function Careers() {
     </section>
   );
 }
-
-export default Careers;

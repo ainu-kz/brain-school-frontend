@@ -129,5 +129,3 @@ export const Cells = () => {
     </div>
   );
 }
-
-export default Cells;

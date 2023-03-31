@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import './styles.scss';
+import { MenuToggle } from "../MenuToggle";
 import Puzzle from '../../assets/icons/puzzle.svg';
+import cn from 'classnames';
+import './styles.scss';
 
 const ELEMENT_START = 6;
 
@@ -14,7 +16,7 @@ function Header() {
   const closeMenu = () => setIsActive(false);
   const openMenu = () => setIsActive(true);
 
-  const handleMenuButton = () => (isActive ? closeMenu() : openMenu());
+  const handleMenuButton = () => isActive ? closeMenu() : openMenu();
 
   const onLinkClick = () => {
     setIsMain(false);
@@ -35,15 +37,13 @@ function Header() {
   useEffect(() => {
     window.onscroll = () => onScroll();
 
-    return () => {
-      (window.onscroll = null);
-    };
+    return () => window.onscroll = null;
   }, []);
 
   return (
     <header className="page__section page__header header">
       <div
-        className={`menu header__menu ${isScroll ? 'header__menu_active' : ''}`}
+        className={cn('menu header__menu', {['header__menu_active']: isScroll})}
       >
         <button
           type="button"
@@ -54,26 +54,13 @@ function Header() {
         </button>
         <div className={`menu__body${isActive ? ' menu__body_active' : ''}`}>
           <ul className="menu__list">
-            <li className={`menu__toggle-container ${isMain ? '_hidden' : ''}`}>
+            <li className={cn('menu__toggle-container', {['_hidden']: isMain})}>
               <NavLink
                 onClick={onHomeClick}
                 to="/"
                 className="menu__toggle-link"
               >
-                <div className="menu__toggle">
-                  <div className="menu__toggle-top">
-                    <span />
-                    <span />
-                    <span />
-                    <span />
-                  </div>
-                  <div className="menu__toggle-bottom">
-                    <span />
-                    <span />
-                    <span />
-                    <span />
-                  </div>
-                </div>
+                <MenuToggle />
               </NavLink>
             </li>
             <li className="menu__item">
@@ -81,15 +68,16 @@ function Header() {
                 о школе
               </NavLink>
             </li>
-            <li className="menu__item">
-              <NavLink
-                onClick={onLinkClick}
-                to="/careers"
-                className="menu__link"
-              >
-                расписание
-              </NavLink>
-            </li>
+            {/* Add later */}
+            {/*<li className="menu__item">*/}
+            {/*  <NavLink*/}
+            {/*    onClick={onLinkClick}*/}
+            {/*    to="/careers"*/}
+            {/*    className="menu__link"*/}
+            {/*  >*/}
+            {/*    расписание*/}
+            {/*  </NavLink>*/}
+            {/*</li>*/}
             <li className="menu__item">
               <NavLink
                 onClick={onLinkClick}
@@ -100,28 +88,29 @@ function Header() {
               </NavLink>
             </li>
             <li className="menu__item">
-              <NavLink onClick={onLinkClick} to="#" className="menu__link">
-                блог
+              <NavLink onClick={e => e.preventDefault()} to="#" className="menu__link menu__link_disabled" disabled>
+                блог (скоро)
               </NavLink>
             </li>
-            <li className="menu__item">
-              <a
-                href="https://www.youtube.com/watch?v=JNU8DhMKryI&ab_channel=MediaMonks"
-                target="blank"
-                className="menu__link"
-              >
-                программа
-              </a>
-            </li>
+            {/* Add later */}
+            {/*<li className="menu__item">*/}
+            {/*  <a*/}
+            {/*    href="https://www.youtube.com/watch?v=JNU8DhMKryI&ab_channel=MediaMonks"*/}
+            {/*    target="blank"*/}
+            {/*    className="menu__link"*/}
+            {/*  >*/}
+            {/*    программа*/}
+            {/*  </a>*/}
+            {/*</li>*/}
           </ul>
         </div>
         <div className="menu__body_background" />
       </div>
       <img
+        ref={logo}
         src={Puzzle}
         alt="brain school logo"
-        ref={logo}
-        className={`header__logo ${isScroll ? 'header__logo_active' : ''}`}
+        className={cn('header__logo', {['header__logo_active']: isScroll})}
       />
     </header>
   );

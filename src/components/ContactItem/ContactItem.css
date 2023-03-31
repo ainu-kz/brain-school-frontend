@@ -20,7 +20,7 @@
 }
 
 .contact-item__description {
-  font-family: 'droid', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 2;
@@ -30,7 +30,7 @@
 }
 
 .contact-item__address {
-  font-family: 'droid', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 2;
@@ -41,7 +41,7 @@
 
 .contact-item__contact-data {
   display: block;
-  font-family: 'droid', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
@@ -55,7 +55,7 @@
 }
 
 .contact-item__subtitle {
-  font-family: 'droid', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: 22px;
   line-height: 1.8;
@@ -68,7 +68,7 @@
 
 .contact-item__data-info {
   display: block;
-  font-family: 'droid', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   text-decoration: none;
   font-weight: 400;
   font-size: 17px;

@@ -1,37 +1,34 @@
 import React from 'react';
 
-function ContactItem(props) {
+export const ContactItem = (
+  {
+    name,
+    description,
+    address,
+    dataInfo
+  }
+) => {
   return (
     <div className="contact-item">
-      <h3 className="contact-item__name">{props.name}</h3>
+      <h3 className="contact-item__name">{name}</h3>
       <div className="contact-item__data">
-        <p className="contact-item__description">{props.description}</p>
-        <p className="contact-item__address">{props.address}</p>
+        <p className="contact-item__description">{description}</p>
+        <p className="contact-item__address">{address}</p>
+
+        <h4 className="contact-item__subtitle">Информация для связи</h4>
         <a
-          href={`mailto: ${props.mail}`}
-          className="contact-item__contact-data"
-        >
-          {props.mail}
-        </a>
-        <a href={`tel: ${props.tel}`} className="contact-item__contact-data">
-          {props.tel}
-        </a>
-        <h4 className="contact-item__subtitle">contact</h4>
-        <a
-          href={`mailto: ${props.dataInfo.mail}`}
+          href={`mailto: ${dataInfo.mail}`}
           className="contact-item__data-info"
         >
-          {props.dataInfo.mail}
+          {dataInfo.mail}
         </a>
         <a
-          href={`tel: ${props.dataInfo.tel}`}
+          href={`tel: ${dataInfo.tel}`}
           className="contact-item__data-info"
         >
-          {props.dataInfo.tel}
+          {dataInfo.tel}
         </a>
       </div>
     </div>
   );
 }
-
-export default ContactItem;

@@ -1,74 +1,11 @@
 const contacts = [
   {
-    name: 'hilversum',
+    name: 'Астана',
     description:
-      'Located just twenty minutes away from Amsterdam Central Station, our Hilversum office is where we produce the majority of our work. We’ve been here ever since 2001, growing from a 3-Monk basement to 86,000 square feet of multimedia muscle.',
-    address: 'Oude Amersfoortseweg 125 1212AA Hilversum The Netherlands',
-    mail: 'hilversum@mediamonks.com',
-    tel: '+31 35 621 21 50',
+      'Расположен по ул. Сыганак 54А, пересечение ул. Сауран. В бизнес центре имеются парковка, кофейные зоны. Режим работы круглосуточно.',
     dataInfo: {
-      mail: 'hilversum@mediamonks.com',
-      tel: '+31 35 621 21 50',
-    },
-  },
-  {
-    name: 'hilversum',
-    description:
-      'Located just twenty minutes away from Amsterdam Central Station, our Hilversum office is where we produce the majority of our work. We’ve been here ever since 2001, growing from a 3-Monk basement to 86,000 square feet of multimedia muscle.',
-    address: 'Oude Amersfoortseweg 125 1212AA Hilversum The Netherlands',
-    mail: 'hilversum@mediamonks.com',
-    tel: '+31 35 621 21 50',
-    dataInfo: {
-      mail: 'hilversum@mediamonks.com',
-      tel: '+31 35 621 21 50',
-    },
-  },
-  {
-    name: 'hilversum',
-    description:
-      'Located just twenty minutes away from Amsterdam Central Station, our Hilversum office is where we produce the majority of our work. We’ve been here ever since 2001, growing from a 3-Monk basement to 86,000 square feet of multimedia muscle.',
-    address: 'Oude Amersfoortseweg 125 1212AA Hilversum The Netherlands',
-    mail: 'hilversum@mediamonks.com',
-    tel: '+31 35 621 21 50',
-    dataInfo: {
-      mail: 'hilversum@mediamonks.com',
-      tel: '+31 35 621 21 50',
-    },
-  },
-  {
-    name: 'hilversum',
-    description:
-      'Located just twenty minutes away from Amsterdam Central Station, our Hilversum office is where we produce the majority of our work. We’ve been here ever since 2001, growing from a 3-Monk basement to 86,000 square feet of multimedia muscle.',
-    address: 'Oude Amersfoortseweg 125 1212AA Hilversum The Netherlands',
-    mail: 'hilversum@mediamonks.com',
-    tel: '+31 35 621 21 50',
-    dataInfo: {
-      mail: 'hilversum@mediamonks.com',
-      tel: '+31 35 621 21 50',
-    },
-  },
-  {
-    name: 'hilversum',
-    description:
-      'Located just twenty minutes away from Amsterdam Central Station, our Hilversum office is where we produce the majority of our work. We’ve been here ever since 2001, growing from a 3-Monk basement to 86,000 square feet of multimedia muscle.',
-    address: 'Oude Amersfoortseweg 125 1212AA Hilversum The Netherlands',
-    mail: 'hilversum@mediamonks.com',
-    tel: '+31 35 621 21 50',
-    dataInfo: {
-      mail: 'hilversum@mediamonks.com',
-      tel: '+31 35 621 21 50',
-    },
-  },
-  {
-    name: 'hilversum',
-    description:
-      'Located just twenty minutes away from Amsterdam Central Station, our Hilversum office is where we produce the majority of our work. We’ve been here ever since 2001, growing from a 3-Monk basement to 86,000 square feet of multimedia muscle.',
-    address: 'Oude Amersfoortseweg 125 1212AA Hilversum The Netherlands',
-    mail: 'hilversum@mediamonks.com',
-    tel: '+31 35 621 21 50',
-    dataInfo: {
-      mail: 'hilversum@mediamonks.com',
-      tel: '+31 35 621 21 50',
+      mail: 'astana@brainschool.kz',
+      tel: '+7 7142 21 21 50',
     },
   },
 ];
