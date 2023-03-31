@@ -1,10 +1,29 @@
-# Проект: Brain School
+# Brain School
 
-### Обзор
+## Description
+Brain School is an innovative educational project that aims to teach students by taking into consideration the work of brain and the way memory is formed. The project is based on the principles of neuroplasticity, which highlights the ability of the brain to change and adapt throughout life. Brain School utilizes this knowledge to create a unique and engaging learning experience for students. The project provides students with practical tools and techniques to help them better retain and recall information. By using a combination of cutting-edge neuroscience research and traditional educational techniques, Brain School aims to help students become more effective learners and improve their academic performance.
 
-Проект написан на React.js. В проекте отсутствует state manager вроде redux, так как изначально не планировалось делать больше одной страницы. В дальнейшем планируется использовать React Context и сверстать страницу /Blog. Разбить код большее количество компонент, поделить компоненты на чистые и грязные. Переписать все на TypeScript. Верстка выполнена по методологии БЭМ.
 
-**Ссылка :**<br />
-Проект можно найти по ссылке:
+## Installation
+1. Clone the repository
+    ```shell
+   git clone https://github.com/ainu-kz/brain-school-frontend.git
+   ```
 
-[comment]: <> (https://mediamonkscopy.web.app/<br />)
+2. Install dependencies
+    ```shell
+   npm run install 
+   ```
+
+3. Run the application
+    ```shell
+   npm run start
+   ```
+
+## Technologies Used
+List the technologies used to build the project.
+
+* React
+* Redux
+* React-Router
+* Sass
