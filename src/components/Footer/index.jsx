@@ -8,9 +8,9 @@ const Index = () => (
     <footer className="page__section page__footer footer">
       <div className="footer__social social">
         <a
-            href="https://www.instagram.com/brainschool.kz/"
-            target="blank"
-            className="social__item"
+          href="https://www.facebook.com/brainscoolkz"
+          target="blank"
+          className="social__item"
         >
           <img src={facebookPath} alt='social icon' className='footer__icon' />
           <span />
@@ -23,7 +23,7 @@ const Index = () => (
           <img src={twitterPath} alt='social icon' className='footer__icon' />
         </a>
         <a
-            href="https://www.facebook.com/brainscoolkz"
+            href="https://www.linkedin.com/company/brainschool/"
             target="blank"
             className="social__item"
         >
