@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../Footer';
-import Table from '../Table/Table';
+import Table from '../Table';
 import Header from '../Header';
 import { Outlet } from 'react-router-dom';
 import "./Root.css";
